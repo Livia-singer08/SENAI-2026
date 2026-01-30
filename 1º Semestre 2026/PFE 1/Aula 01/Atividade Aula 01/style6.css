@@ -1,0 +1,25 @@
+body {
+    background-color: #bab1fa;
+    font-family: Arial;
+    text-align: center;
+}
+
+h1 {
+    color: #495fcd;
+}
+
+input, button {
+    padding: 8px;
+    margin: 10px;
+}
+
+button {
+    background-color: #274ad3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: rgb(17, 12, 161);
+}
