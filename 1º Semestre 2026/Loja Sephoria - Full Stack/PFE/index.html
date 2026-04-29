@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sephoria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="topo">
+            <div class="logo">SEPHORIA</div>
+            <input class="busca" type="text" placeholder="Buscar produtos...">
+            <button id="btnNovo">+ Produto</button>
+        </div>
+
+        <nav class="menu">
+            <a href="#">Início</a>
+            <a href="#">Produtos</a>
+            <a href="#">Minha Conta</a>
+            <a href="#">Carrinho</a>
+        </nav>
+    </header>
+
+    <div class="filtros">
+        <button class="ativo">Todos</button>
+        <button>Face</button>
+        <button>Olhos</button>
+        <button>Lábios</button>
+        <button>Skincare</button>
+        <button>Diversos</button>
+    </div>
+
+    <main></main>
+
+    <div id="cadastro" class="modal oculto">
+        <div class="janela">
+            <h2>Adicionar Produto</h2>
+            <form id="formCad">
+                <label>Nome do Produto</label>
+                <input type="text" id="nome" required>
+
+                <label>URL da Imagem</label>
+                <input type="text" id="imagem" required>
+
+                <label>Preço</label>
+                <input type="number" id="preco" step="0.01" required>
+
+                <label>Categoria</label>
+                <select id="categoria">
+                    <option value="Face">Face</option>
+                    <option value="Olhos">Olhos</option>
+                    <option value="Lábios">Lábios</option>
+                    <option value="Skincare">Skincare</option>
+                    <option value="Diversos">Diversos</option>
+                </select>
+
+                <label>Marca</label>
+                <input type="text" id="marca" required>
+
+                <div class="botoes">
+                    <button type="reset" id="btnCancelar">Cancelar</button>
+                    <button type="submit">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="detalhes" class="modal oculto">
+        <div class="janela">
+            <h2 id="tituloProduto"></h2>
+            
+            <img id="imgProduto" src="" alt="Preview do Produto">
+
+            <label>Nome</label>
+            <input type="text" id="nomeEdit">
+            
+            <label>URL da Imagem</label>
+            <input type="text" id="imgEdit">
+            
+            <label>Preço</label>
+            <input type="number" id="precoEdit" step="0.01">
+
+            <label>Categoria</label>
+            <select id="categoriaEdit">
+                <option value="Face">Face</option>
+                <option value="Olhos">Olhos</option>
+                <option value="Lábios">Lábios</option>
+                <option value="Skincare">Skincare</option>
+                <option value="Diversos">Diversos</option>
+            </select>
+
+            <label>Marca</label>
+            <input type="text" id="marcaEdit">
+
+            <div class="botoes">
+                <button id="btnSalvarEdit">Salvar</button>
+                <button id="btnExcluir" style="background: #ff4d4d; color: white;">Excluir</button>
+                <button id="btnFechar" type="button">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

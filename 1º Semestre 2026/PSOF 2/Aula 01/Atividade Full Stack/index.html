@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas da Dona Benta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main></main>
+    <div class="caixa-maior">
+        <button class="botao-adicionar" onclick="abrirModal()">
+            Adicionar Receita
+        </button>
+
+        <button class="botao-reset" onclick="resetarCards()">
+            Reset
+        </button>
+    </div>
+
+    <div class="container-cards" id="container-cards"></div>
+
+    <div class="modal" id="modal">
+        <div class="modal-conteudo">
+            <h2>Adicionar Receita</h2>
+
+            <input type="text" id="nome" placeholder="Nome da receita">
+            <textarea id="ingredientes" placeholder="Ingredientes"></textarea>
+            <textarea id="modoPreparo" placeholder="Modo de preparo"></textarea>
+            <input type="text" id="imagem" placeholder="URL da imagem">
+            <input type="number" id="custo" placeholder="Custo aproximado">
+
+            <div class="botoes-modal">
+                <button onclick="fecharModal()">Cancelar</button>
+                <button onclick="adicionarReceita()">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

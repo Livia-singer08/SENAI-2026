@@ -1,0 +1,36 @@
+// Inicializar Projeto NodeJs
+npm init -y
+
+// Instalar as dependências
+express cors mysql2 dotenv
+npm i express cors mysql2 dotenv
+
+// Criar arquivo server.js
+Modelo na aula 02 de PWBE 2
+
+// Instalar dependência do nodemon
+npm i nodemon
+
+---------------------------------------- 06/02
+// Prisma @prisma/client           
+npm i prisma @prisma/client  
+npm i @prisma/adapter-mariadb
+
+npx prisma init --datasource-provider mysql
+
+npx prisma migrate dev
+
+npx prisma generate
+
+---------------------------------------- 13/03
+npx prisma migrate reset
+
+npx prisma migrate dev --name init
+
+npx prisma generate
+
+backend-aula -models
+
+backend-aula -insomnia
+
+npm run dev
