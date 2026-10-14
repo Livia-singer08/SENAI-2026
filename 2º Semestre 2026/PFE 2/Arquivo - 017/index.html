@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#100c0d">
+    <meta name="description" content="Arquivo 017 — jogo de investigação criminal.">
+    <title>Arquivo 017 | Investigação Criminal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+
+    <header class="topbar">
+        <button class="logo" id="logoButton" type="button">
+            <span class="logo-symbol">017</span>
+            <span class="logo-text">ARQUIVO <strong>017</strong></span>
+        </button>
+
+        <div class="topbar-right">
+            <span class="status-indicator"></span>
+            <span class="status-text">CASO EM ABERTO</span>
+            <button class="sound-button" id="soundButton" type="button">
+                <span id="soundIcon">♫</span>
+                <span id="soundLabel">SOM DESLIGADO</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="screen home-screen active" id="homeScreen">
+            <div class="home-background"></div>
+            <div class="home-vignette"></div>
+
+            <div class="home-content">
+                <p class="eyebrow">
+                    <span></span>
+                    DEPARTAMENTO DE INVESTIGAÇÃO CRIMINAL
+                </p>
+
+                <h1>ARQUIVO <span>017</span></h1>
+
+                <div class="title-divider">
+                    <span></span>
+                    <span class="divider-diamond">◆</span>
+                    <span></span>
+                </div>
+
+                <p class="home-subtitle">
+                    A verdade está escondida entre as mentiras.
+                </p>
+
+                <p class="home-description">
+                    Uma morte inexplicável. Cinco suspeitos. Evidências contraditórias.
+                    Sua missão é reconstruir os acontecimentos e descobrir quem está por trás do crime.
+                </p>
+
+                <button class="primary-button" id="startButton" type="button">
+                    <span>INICIAR INVESTIGAÇÃO</span>
+                    <span class="button-arrow">→</span>
+                </button>
+
+                <p class="home-warning">
+                    UM CASO. CINCO SUSPEITOS. UMA ÚNICA VERDADE.
+                </p>
+            </div>
+
+            <div class="home-bottom">
+                <span>CLASSIFICAÇÃO: CONFIDENCIAL</span>
+                <span>DEPARTAMENTO DE HOMICÍDIOS · 2026</span>
+            </div>
+        </section>
+
+        <section class="screen case-screen" id="caseScreen">
+            <aside class="sidebar">
+                <div class="sidebar-heading">
+                    <span class="sidebar-label">DOSSIÊ</span>
+                    <span class="case-number">Nº 017</span>
+                </div>
+
+                <nav class="case-navigation">
+                    <button class="nav-tab active" data-target="contextSection" type="button">
+                        <span class="nav-number">01</span>
+                        <span>O caso</span>
+                    </button>
+
+                    <button class="nav-tab" data-target="suspectsSection" type="button">
+                        <span class="nav-number">02</span>
+                        <span>Suspeitos</span>
+                    </button>
+
+                    <button class="nav-tab" data-target="evidenceSection" type="button">
+                        <span class="nav-number">03</span>
+                        <span>Evidências</span>
+                    </button>
+
+                    <button class="nav-tab" data-target="accusationSection" type="button">
+                        <span class="nav-number">04</span>
+                        <span>Acusação</span>
+                    </button>
+                </nav>
+
+                <div class="sidebar-progress">
+                    <p>PROGRESSO DA INVESTIGAÇÃO</p>
+                    <div class="progress-track">
+                        <div class="progress-fill" id="progressBar"></div>
+                    </div>
+                    <span id="progressText">0% concluído</span>
+                </div>
+
+                <div class="sidebar-bottom">
+                    <span class="status-indicator"></span>
+                    SISTEMA OPERACIONAL
+                </div>
+            </aside>
+
+            <div class="case-main">
+                <section class="case-section active" id="contextSection">
+                    <div class="section-heading">
+                        <p class="eyebrow">DOSSIÊ CONFIDENCIAL · 017-A</p>
+                        <h2>O caso</h2>
+                        <p>Uma noite, uma mansão e um segredo mortal.</p>
+                    </div>
+
+                    <div class="context-image">
+                        <img src="images/mansao.jpg" alt="Mansão Valença, local do crime">
+                    </div>
+
+                    <div class="case-summary">
+                        <div class="summary-header">
+                            <span class="summary-mark">!</span>
+                            <h3>RELATÓRIO INICIAL</h3>
+                        </div>
+
+                        <p>
+                            Na noite de 14 de outubro, Augusto Valença, um empresário
+                            conhecido por sua fortuna e seus negócios controversos,
+                            foi encontrado morto em seu escritório, dentro de sua mansão.
+                        </p>
+
+                        <p>
+                            A propriedade estava praticamente isolada. As primeiras
+                            análises indicam que a morte ocorreu entre 22h50 e 23h10.
+                            Não há sinais conclusivos de arrombamento.
+                        </p>
+
+                        <p>
+                            Cinco pessoas tinham motivos para desejar a queda de Augusto.
+                            Todas estavam ligadas à residência naquela noite, e cada uma
+                            apresenta contradições em seu depoimento.
+                        </p>
+
+                        <p class="case-instruction">
+                            Sua tarefa é investigar os suspeitos, examinar as evidências
+                            e apresentar uma acusação fundamentada.
+                        </p>
+                    </div>
+
+                    <div class="case-facts">
+                        <div class="fact-card">
+                            <span class="fact-label">VÍTIMA</span>
+                            <strong>Augusto Valença</strong>
+                        </div>
+
+                        <div class="fact-card">
+                            <span class="fact-label">LOCAL</span>
+                            <strong>Mansão Valença</strong>
+                        </div>
+
+                        <div class="fact-card">
+                            <span class="fact-label">HORÁRIO ESTIMADO</span>
+                            <strong>22h50 – 23h10</strong>
+                        </div>
+                    </div>
+
+                    <button class="primary-button section-next" data-next="suspectsSection" type="button">
+                        <span>ANALISAR SUSPEITOS</span>
+                        <span class="button-arrow">→</span>
+                    </button>
+                </section>
+
+                <section class="case-section" id="suspectsSection">
+                    <div class="section-heading">
+                        <p class="eyebrow">DOSSIÊ CONFIDENCIAL · 017-B</p>
+                        <h2>Os suspeitos</h2>
+                        <p>Todos escondem alguma coisa. Descubra quem esconde um assassinato.</p>
+                    </div>
+
+                    <div class="suspect-grid" id="suspectGrid"></div>
+                    <div class="suspect-detail" id="suspectDetail"></div>
+
+                    <button class="primary-button section-next" data-next="evidenceSection" type="button">
+                        <span>EXAMINAR EVIDÊNCIAS</span>
+                        <span class="button-arrow">→</span>
+                    </button>
+                </section>
+
+                <section class="case-section" id="evidenceSection">
+                    <div class="section-heading">
+                        <p class="eyebrow">DOSSIÊ CONFIDENCIAL · 017-C</p>
+                        <h2>Central de evidências</h2>
+                        <p>Analise cada descoberta. Registre as provas que considerar relevantes.</p>
+                    </div>
+
+                    <div class="evidence-status">
+                        <span>ITENS EXAMINADOS</span>
+                        <strong id="evidenceCount">0 / 6</strong>
+                    </div>
+
+                    <div class="evidence-grid" id="evidenceGrid"></div>
+                    <div class="evidence-detail" id="evidenceDetail"></div>
+
+                    <div class="notebook">
+                        <div class="notebook-heading">
+                            <span>▤</span>
+                            <h3>CADERNO DE INVESTIGAÇÃO</h3>
+                        </div>
+
+                        <p>Marque as evidências que deseja utilizar em sua acusação.</p>
+                        <div class="notebook-list" id="notebookList"></div>
+                    </div>
+
+                    <button class="primary-button section-next" data-next="accusationSection" type="button">
+                        <span>FORMULAR ACUSAÇÃO</span>
+                        <span class="button-arrow">→</span>
+                    </button>
+                </section>
+
+                <section class="case-section" id="accusationSection">
+                    <div class="section-heading">
+                        <p class="eyebrow">DOSSIÊ CONFIDENCIAL · 017-D</p>
+                        <h2>Apresente sua acusação</h2>
+                        <p>Uma conclusão precipitada pode deixar o verdadeiro culpado livre.</p>
+                    </div>
+
+                    <form id="accusationForm">
+                        <div class="form-group">
+                            <label for="culprit">QUEM É O CULPADO?</label>
+                            <select id="culprit" name="culprit" required>
+                                <option value="">Selecione um suspeito</option>
+                                <option value="helena">Helena Duarte</option>
+                                <option value="marcos">Marcos Vieira</option>
+                                <option value="clara">Clara Mendes</option>
+                                <option value="rafael">Rafael Nogueira</option>
+                                <option value="daniel">Daniel Ferraz</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="motive">QUAL FOI O MOTIVO?</label>
+                            <select id="motive" name="motive" required>
+                                <option value="">Selecione o motivo</option>
+                                <option value="financial">Interesse financeiro</option>
+                                <option value="revenge">Vingança pessoal</option>
+                                <option value="jealousy">Ciúme</option>
+                                <option value="blackmail">Medo de uma revelação</option>
+                                <option value="other">Outro motivo</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="method">QUAL FOI O MÉTODO UTILIZADO?</label>
+                            <select id="method" name="method" required>
+                                <option value="">Selecione o método</option>
+                                <option value="letter_opener">Objeto cortante, como um abridor de cartas</option>
+                                <option value="poison">Envenenamento</option>
+                                <option value="firearm">Arma de fogo</option>
+                                <option value="blunt_object">Objeto contundente</option>
+                                <option value="other">Outro método</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="proofSelection">EVIDÊNCIAS QUE SUSTENTAM SUA ACUSAÇÃO</label>
+                            <div id="proofSelection" class="proof-selection"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reasoning">JUSTIFIQUE SUA CONCLUSÃO</label>
+                            <textarea id="reasoning" name="reasoning" rows="5" minlength="30" placeholder="Explique como as evidências se conectam e por que apontam para esse suspeito..." required></textarea>
+                            <div class="character-counter">
+                                <span>Escreva pelo menos 30 caracteres.</span>
+                                <span id="reasoningCount">0 caracteres</span>
+                            </div>
+                        </div>
+
+                        <button class="primary-button accusation-button" type="submit">
+                            <span>CONFIRMAR ACUSAÇÃO</span>
+                            <span class="button-arrow">→</span>
+                        </button>
+                    </form>
+
+                    <div class="verdict-panel" id="verdictPanel" aria-live="polite"></div>
+                </section>
+
+                <footer class="case-progress-footer" id="caseProgressFooter">
+                    <span>ARQUIVO 017 · ACESSO RESTRITO</span>
+                    <span>INVESTIGAÇÃO EM ANDAMENTO</span>
+                </footer>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
